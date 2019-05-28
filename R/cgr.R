@@ -66,23 +66,19 @@ cgr = function(data,
       seq.base =c(0:9)
     }
     else if(seq.base == "AMINO"){
-
       seq.base=c("A","C","D","E","F","G","H","I","K","L","M","N","P","Q","R",
                  "S","T","V","W","Y")
     }
     else if(seq.base == "amino"){
-      data=toupper(data)
       seq.base=c("a","c","d","e","f","g","h","i","k","l","m","n","p","q","r",
                  "s","t","v","w","y")
     }
 
     else if (seq.base == "DNA"){
-      #data=toupper(data)
       seq.base= c("A","G","T","C")
     }
 
     else if (seq.base == "dna"){
-      #data=toupper(data)
       seq.base= c("a","g","t","c")
     }
     else if (seq.base == "LETTERS"){
